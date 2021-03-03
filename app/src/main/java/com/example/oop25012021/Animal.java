@@ -6,6 +6,13 @@ public class Animal {
     int height;
     float weight;
 
+    // constructor : Phương thức khởi
+    public Animal(String name , int height , float weight){
+        this.name = name;
+        this.height = height;
+        this.weight = weight;
+    }
+
     // 2 : Hành vi(Phương thức)
     public String eat(int category){
         String result = "";

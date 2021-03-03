@@ -20,14 +20,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Tạo ra 1 object
-        Animal dog = new Animal();
-        dog.height = 50;
-        dog.name = "Milu";
-        dog.weight = 5.3f;
+        Animal dog = new Animal("Milu",50,5.3f);
 
         Log.d("BBB","Tên con vật : " +dog.name);
         Log.d("BBB","Chiều cao con vật : " +dog.height + " cm");
-        Log.d("BBB","Cân nặng con vật : " +dog.weight + " cm");
+        Log.d("BBB","Cân nặng con vật : " +dog.weight + " kg");
         Log.d("BBB",dog.eat(2));
 
     }
