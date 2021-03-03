@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d("BBB","Tên con vật : " +dog.name);
         Log.d("BBB","Chiều cao con vật : " +dog.height + " cm");
         Log.d("BBB","Cân nặng con vật : " +dog.weight + " cm");
+        Log.d("BBB",dog.eat(2));
 
     }
 }

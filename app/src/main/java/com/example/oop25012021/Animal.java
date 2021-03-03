@@ -7,4 +7,17 @@ public class Animal {
     float weight;
 
     // 2 : Hành vi(Phương thức)
+    public String eat(int category){
+        String result = "";
+        switch (category){
+            case 1 : result = "Động vật ăn cỏ";
+                    break;
+            case 2 : result = "Động vật ăn thịt";
+                    break;
+            default:
+                result = "Thức ăn chưa được xác định";
+                break;
+        }
+        return result;
+    }
 }
