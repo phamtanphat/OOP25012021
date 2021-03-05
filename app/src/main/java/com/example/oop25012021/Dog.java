@@ -18,4 +18,9 @@ public class Dog extends Animal{
     public void setColor(String color) {
         this.color = color;
     }
+
+    @Override
+    protected String eat(int category) {
+        return super.eat(category);
+    }
 }

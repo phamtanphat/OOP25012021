@@ -14,7 +14,7 @@ public class Animal {
     }
 
     // 2 : Hành vi(Phương thức)
-    public String eat(int category){
+    protected String eat(int category){
         String result = "";
         switch (category){
             case 1 : result = "Động vật ăn cỏ";
