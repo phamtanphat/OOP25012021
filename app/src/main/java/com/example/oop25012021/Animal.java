@@ -34,12 +34,6 @@ public class Animal {
     }
 
     public void setName(String name){
-        if (name == null){
-            throw new NullPointerException("Giá trị truyền vào là null");
-        }
-        if (name.isEmpty()){
-            throw new NullPointerException("Người dùng không được nhập chuỗi rỗng");
-        }
         this.name = name;
     }
 
