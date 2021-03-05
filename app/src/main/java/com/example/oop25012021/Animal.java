@@ -2,9 +2,9 @@ package com.example.oop25012021;
 
 public class Animal {
     // 1 : Thuộc tính
-    String name;
-    int height;
-    float weight;
+    private String name;
+    private int height;
+    private float weight;
 
     // constructor : Phương thức khởi
     public Animal(String name , int height , float weight){
@@ -26,5 +26,38 @@ public class Animal {
                 break;
         }
         return result;
+    }
+
+    // 3 : getter , setter
+    public String getName(){
+        return name;
+    }
+
+    public void setName(String name){
+        if (name == null){
+            throw new NullPointerException("Giá trị truyền vào là null");
+        }
+        if (name.isEmpty()){
+            throw new NullPointerException("Người dùng không được nhập chuỗi rỗng");
+        }
+        this.name = name;
+    }
+
+//    alt + insert
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public float getWeight() {
+        return weight;
+    }
+
+    public void setWeight(float weight) {
+        this.weight = weight;
     }
 }

@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Person;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +23,14 @@ public class MainActivity extends AppCompatActivity {
 
         // Tạo ra 1 object
         Animal dog = new Animal("Milu",50,5.3f);
+        dog.setName("Kiki");
+        Log.d("BBB","Tên con vật : " +dog.getName());
+//        Log.d("BBB","Chiều cao con vật : " +dog.height + " cm");
+//        Log.d("BBB","Cân nặng con vật : " +dog.weight + " kg");
+//        Log.d("BBB",dog.eat(2));
 
-        Log.d("BBB","Tên con vật : " +dog.name);
-        Log.d("BBB","Chiều cao con vật : " +dog.height + " cm");
-        Log.d("BBB","Cân nặng con vật : " +dog.weight + " kg");
-        Log.d("BBB",dog.eat(2));
-
+        // Access modifier : phạm vi khi sử dụng biến, class , phương thức ...
+        // public : đứng ở đâu cũng dùng được
+        // private : định nghĩa giá trị ở đâu thì sử dụng ở đó
     }
 }
