@@ -1,6 +1,8 @@
 package com.example.oop25012021;
 
-public class Animal {
+import android.util.Log;
+
+public class Animal implements OnPrintable{
     // 1 : Thuộc tính
     private String name;
     private int height;
@@ -53,5 +55,10 @@ public class Animal {
 
     public void setWeight(float weight) {
         this.weight = weight;
+    }
+
+    @Override
+    public void print() {
+        Log.d("BBB","Lớp Animal");
     }
 }

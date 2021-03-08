@@ -1,6 +1,8 @@
 package com.example.oop25012021;
 
-public class Dog extends Animal{
+import android.util.Log;
+
+public class Dog extends Animal implements OnPrintable{
     private String color;
 
     public Dog(String name , int height , float weight , String color){
@@ -21,6 +23,22 @@ public class Dog extends Animal{
 
     @Override
     protected String eat(int category) {
-        return super.eat(category);
+        String result = "";
+        switch (category){
+            case 1 : result = "Chó kiểng";
+                break;
+            case 2 : result = "Chó săn";
+                break;
+            default:
+                result = "Chó chưa xác định";
+                break;
+        }
+        return result;
+    }
+
+
+    @Override
+    public void print() {
+        Log.d("BBB","Lớp dog");
     }
 }
